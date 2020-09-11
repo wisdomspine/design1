@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#button").click(function(){
+		   var a=$("#p").val();
+		   var b=$("#rp").val();
+		   if(a!=b)
+		   	{$('#c').append("<div class='alert alert-danger' style='margin-top:30px;width:550px;text-align:center'>Check Your Password</div>");
+ $('#button').addClass("btn btn-danger");}
+
+		});
+	});
+	</script>
+
+ <script>
+  	function ab()
+    {
+      var a=document.getElementById("2").value;
+      var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+      if(!a.match(b))
+      {
+               window.alert("Please enter correct E-mail address");
+      }
+      else 
+      {
+      	window.alert("Your Email has been sent successfully");
+      }
+    }
+</script>
+
+<script>
+		function ac()
+		{
+			var a=document.getElementById("9").value;
+			var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+			var c=document.getElementById("p").value;
+			var d=document.getElementById("rp").value;
+			if(!a.match(b))
+			{
+               window.alert("Please enter correct E-mail address");
+			}
+			else if(c.match(d) && a.match(b))
+			{
+               window.alert("Your Account is successfully created");
+			}
+			
+		}
+	</script>
+
+<style>
+			 .modal-header{
+			 	background-color: #282020;
+			 	color:white;
+			 }
+			 .modal-body{
+			 	background-color: #282020;
+			 	color:white;
+			 }
+			 .modal-footer{
+			 	background-color:  #282020;
+			 	color:white;
+			 }
+	</style>
+
+</head>
+<body>
+<nav class = "navbar navbar-inverse">
+<div class = "container-fluid">
+<ul class = "nav navbar-nav">
+<li><a href = "index.html"  style = "color-white">Home</a></li>
+<li><a href="#"></a></li>
+<li><a href = "living.html" style = "color-white">Living Modular</a></li>
+<li><a href="#"></a></li>
+<li><a href = "bedroom.html" style = "color-white">Bedroom Modular</a></li>
+<li><a href="#"></a></li>
+<li><a href = "kitchen.html" style = "color-white">kitchen Modular</a></li>
+<li><a href="#"></a></li>
+<li><a href = "more_design.html" style = "color-white">More Design</a></li>
+<li><a href="#"></a></li>
+<li><a href = "#"  style = "color-white">About Us</a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="information.html"><span class="glyphicon glyphicon-user"> Information</span></a></li>
+<li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-envelope"> Email us</span></a></li>
+
+</ul>
+</div>
+</nav>
+<!--nav bar complete-->
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+     <div class="media">
+    <div class="media-left">
+      <img src="image.png" class="media-object img-circle" style="width:80px;height:80px">
+    </div>
+    <div class="media-body">
+     <input type="text" class="form-control" style="width:280px;" placeholder="Name" required><br>
+     <input type="email" class="form-control" style="width:280px;" placeholder="Email Id" id="2"required><br>
+     </div>
+    <textarea rows=8 cols=90 placeholder="Message.."></textarea><br><br>
+    <button type="submit"class="btn btn-primary btn-lg" onclick="ab()" data-dismiss="modal">SEND</button>
+  </div>
+ <!--email us-->
+
+ </div>
+  </div>
+
+
+<div class = "container" >
+<center><h1 style = "font-family:French Script MT;font-size:50px">Interioric Houses<h1><center>
+</div>
+<hr size = "10">
+<!-- heading-->
+
+
+<div class="row">
+		<div class="col-md-12" style="height:63px;background-color: #e1e1e1;"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-1" style="height:500px;background-color: #e1e1e1;">
+			</div>
+			<div class="col-md-4" style="background-image:url('pic414.jpg');background-repeat:no-repeat;height:500px;background-size:cover">
+			</div>
+			<div class="col-md-6" style="height:500px">
+
+	<form>
+					<div class="container">
+					<div class="form-group">
+						<input type="text" placeholder="Username" class="form-control" style="border: none;border-bottom:2px solid  grey;margin-top:40px;background:none;width:550px;" required>
+					</div>
+					<div class="form-group">
+						<input type="email" placeholder="Email"  class="form-control" style="border: none;border-bottom:2px solid grey;margin-top:30px;background:none;width:550px" id="9"required>
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password"  class="form-control" style="border: none;border-bottom:2px solid grey;margin-top:30px;background:none;width:550px" id="p" required>
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="confirm password"  class="form-control" style="border: none;border-bottom:2px solid grey;margin-top:30px;background:none;width:550px" id="rp" required>
+					</div>
+					
+				
+				</form>
+
+
+<a href= "#myModal1" data-toggle="modal"><button type="button" class="btn btn-primary btn-block" style="margin-top:30px;width:550px" id="button" onclick="ac()">Submit</button></a>
+					<div style="margin-top:30px">
+					<a href="login.html">Already Registered? Sign in.</a></div>
+					<div id="c"></div>
+			</div>
+		</div>
+			<div class="col-md-1" style="height:500px;background-color: #e1e1e1;">
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-md-12" style="height:63px;background-color: #e1e1e1;"></div>
+		</div>
+
+  </div>
+<div class"modal fade" id="myModal1" role="dialog">
+<div class="modal-dialog">
+<img src="submit.png" style="width:300px; height=400px">
+</div>
+</div>
+
+</div>
+</body>
+</html>

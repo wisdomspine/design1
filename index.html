@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script>
+  	function ab()
+    {
+      var a=document.getElementById("2").value;
+      var b=/^[a-zA-Z]+@[A-Za-z]+.com$/;
+      if(!a.match(b))
+      {
+               window.alert("Please enter correct E-mail address");
+      }
+      else 
+      {
+      	window.alert("Your Email has been sent successfully");
+      }
+    }
+</script>
+
+
+
+<style>
+			 .modal-header{
+			 	background-color: #282020;
+			 	color:white;
+			 }
+			 .modal-body{
+			 	background-color: #282020;
+			 	color:white;
+			 }
+			 .modal-footer{
+			 	background-color:  #282020;
+			 	color:white;
+			 }
+
+
+.css div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.css div:first-child {
+	margin-left: 0;
+}
+.css div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 100%;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+
+
+/* Zoom In #1 */
+.thumbnail figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.thumbnail figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+	</style>
+</head>
+<body>
+<nav class = "navbar navbar-inverse">
+<div class = "container-fluid">
+<ul class = "nav navbar-nav">
+<li><a href = "index.html"  style = "color-white">Home</a></li>
+<li><a href="#"></a></li>
+<li><a href = "living.html" style = "color-white">Living Modular</a></li>
+<li><a href="#"></a></li>
+<li><a href = "bedroom.html" style = "color-white">Bedroom Modular</a></li>
+<li><a href="#"></a></li>
+<li><a href = "kitchen.html" style = "color-white">kitchen Modular</a></li>
+<li><a href="#"></a></li>
+<li><a href = "more_design.html" style = "color-white">More Design</a></li>
+<li><a href="#"></a></li>
+<li><a href = "#"  style = "color-white">About Us</a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="information.html"><span class="glyphicon glyphicon-user"> Information</span></a></li>
+<li><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-envelope"> Email us</span></a></li>
+
+</ul>
+</div>
+</nav>
+<!--nav bar complete-->
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+     <div class="media">
+    <div class="media-left">
+      <img src="image.png" class="media-object img-circle" style="width:80px;height:80px">
+    </div>
+    <div class="media-body">
+     <input type="text" class="form-control" style="width:280px;" placeholder="Name" required><br>
+     <input type="email" class="form-control" style="width:280px;" placeholder="Email Id" id="2"required><br>
+     </div>
+    <textarea rows=8 cols=90 placeholder="Message.."></textarea><br><br>
+    <button type="submit"class="btn btn-primary btn-lg" onclick="ab()" data-dismiss="modal">SEND</button>
+  </div>
+ <!--email us-->
+
+ </div>
+  </div>
+
+<div class = "container" >
+<center><h1 style = "font-family:French Script MT;font-size:50px">Interioric Houses<h1><center>
+</div>
+<hr size = "10">
+<!-- heading-->
+
+<div class = "container">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+ <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="pic1.jpg" style = "width:100%">
+	<div class="carousel-caption">
+          <h3>Living room</h3>
+         
+        </div>
+      </div>
+
+<div class="item">
+        <img src="pic2.jpg" alt="Chicago" style = "width:100%">
+	<div class="carousel-caption">
+          <h3>Bedroom</h3>
+          
+        </div>
+      </div>
+    
+<div class="item">
+        <img src="pic3.jpg"  style = "width:100%">
+	<div class="carousel-caption">
+          <h3>Kitchen</h3>
+          
+        </div>
+      </div>
+    </div>
+
+<!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</div>
+
+<br>
+<hr size = "10">
+
+<br>
+
+<!--div-->
+
+<div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail css" id="1">
+        
+        <figure><a href = "living.html">  <img src="pic12.jpg" alt="Lights" ></a></figure>
+          <div class="caption">
+          
+          <p><a href = "living.html">Living Modular</a></p>
+          </div>
+        
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="thumbnail css" id="3">
+        
+        <figure><a href = "bedroom.html">  <img src="pic21.jpg" alt="Fjords" ></a></figure>
+          <div class="caption">
+          	
+            <p><a href = "bedroom.html">Bedroom Modular</a></p>
+          </div>
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail css" id="4">
+        
+       <figure> <a href = "kitchen.html">  <img src="pic3.jpg" alt="Fjords" ></a></figure>
+          <div class="caption">
+          	
+            <p><a href = "kitchen.html">Kitchen Modular</a></p>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!--wranty-->
+
+<div style = "background-color:#25383C; height:300px">
+<div class="row">
+    <div class="col-md-3" >
+      
+        <center>
+          <img src="warty.png" alt="Lights" style="width:50px;height:50px">
+          <div class="caption" style= "color:white">
+          <h3><b>5-Year Warranty</b></h3>
+          <p>All our products come with a 5 year warranty for any manufacturing defects.</p>
+          </div>
+        </center>
+    
+    </div>
+
+<div class="col-md-3">
+      
+        <center>
+          <img src="install.png" alt="Lights" style="width:50px;height:50px">
+          <div class="caption" style= "color:white">
+          <h3><b>45-day Installation</b></h3>
+          <p>Get your chosen products installed in 45 days, or we pay rent. That's a promise!</p>
+          </div>
+        </center>
+    
+    </div>
+    
+    <div class="col-md-3">
+      
+        <center>
+          <img src="expert.png" alt="Fjords" style="width:50px;height:50px">
+          <div class="caption" style= "color:white">
+          <h3><b>900+ Expert Designers<b></h3>	
+            <p>Create your dream home, fitting your lifestyle, with the help of our top designers.</p>
+          </div>
+        </center>
+   
+    </div>
+    <div class="col-md-3">
+      
+        <center>
+          <img src="service.png" alt="Fjords" style="width:50px;height:50px">
+          <div class="caption" style= "color:white">
+          <h3><b>Post-Installation Service</b></h3>	
+            <p>Enjoy unwavering support and services from our skilled team for up to 5 years</p>
+          </div>
+        </center>
+      
+    </div>
+  </div>
+
+</div>
+<br><br><br>
+<div style = "background-color: #3D3C3A; height:150px">
+<ul style="list-style-type:none;color:white">
+ <center> <li>Information</li></center>
+  <center><li>About Us</li></center>
+  <center><li>More Design</li></center>
+</ul>  
+</div>
+</body>
+<html>
